@@ -1,456 +1,88 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#fff5f7">
-<title>Rozira Flower | Fleurs en satin</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
+<title>بوتيك فاتي - باقات ورد الساتان | Taroudant</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
 <style>
-:root {
-  --rose:#b85e7a;
-  --rose-light:#fff0f4;
-  --gold:#c5a363;
-  --white:#fff;
-  --text:#39262e;
-  --muted:#79666d;
-}
-* {box-sizing:border-box}
-html {scroll-behavior:smooth}
-body {
-  margin:0;
-  font-family:'DM Sans',sans-serif;
-  color:var(--text);
-  background:#fffaf9;
-  line-height:1.6;
-}
-a {text-decoration:none;color:inherit}
-button,input,select,textarea {font:inherit}
-.container {width:92%;max-width:1100px;margin:auto}
-.announcement {
-  background:#98445f;color:white;text-align:center;
-  padding:9px;font-size:13px;
-}
-header {
-  position:sticky;top:0;z-index:5;
-  background:#fffaf9ee;border-bottom:1px solid #f0dce2;
-}
-nav {
-  display:flex;align-items:center;justify-content:space-between;
-  padding:14px 0;gap:15px;
-}
-.logo {font:700 25px 'Playfair Display',serif;color:var(--rose)}
-.logo span {color:var(--gold)}
-.navlinks {display:flex;gap:20px;font-size:14px}
-.btn {
-  display:inline-block;border:0;border-radius:30px;
-  padding:12px 20px;background:var(--rose);color:white;
-  cursor:pointer;font-weight:600;
-}
-.btn:hover {background:#91435b}
-.hero {
-  background:linear-gradient(135deg,#fff6f7,#fbe5ec);
-  padding:65px 0;
-}
-.hero-grid {
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:40px;align-items:center;
-}
-.eyebrow {
-  color:var(--rose);letter-spacing:3px;
-  font-size:12px;font-weight:700;text-transform:uppercase;
-}
-h1,h2,h3 {font-family:'Playfair Display',serif;line-height:1.2}
-h1 {font-size:clamp(38px,5vw,65px);margin:18px 0}
-h1 em {color:var(--rose);font-weight:500}
-p {color:var(--muted)}
-.hero img {
-  width:100%;height:400px;object-fit:cover;
-  border-radius:48% 48% 18px 18px;
-  border:7px solid white;
-}
-.hero-actions {display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-.btn-outline {background:transparent;color:var(--rose);border:1px solid var(--rose)}
-section {padding:65px 0}
-.section-title {text-align:center;max-width:600px;margin:0 auto 35px}
-.section-title h2 {font-size:36px;margin:12px 0}
-.products {display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.product {
-  background:white;border:1px solid #f0dce2;
-  border-radius:18px;overflow:hidden;
-  box-shadow:0 8px 25px #7d40500b;
-}
-.product img {width:100%;height:260px;object-fit:cover;display:block}
-.product-content {padding:18px}
-.product h3 {font-size:22px;margin:0 0 8px}
-.product p {font-size:14px;min-height:44px}
-.product-bottom {
-  display:flex;align-items:center;justify-content:space-between;
-  gap:8px;flex-wrap:wrap;
-}
-.price {font-weight:700;color:var(--rose)}
-.small {padding:9px 13px;font-size:13px}
-.notice-band {
-  background:var(--rose-light);
-  border-block:1px solid #f1dce3;
-}
-.features {display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
-.feature {padding:12px}
-.feature-icon {font-size:32px}
-.feature h3 {font-size:20px;margin:8px 0}
-.feature p {font-size:14px}
-.order {background:linear-gradient(135deg,#fff8f6,#fff0f4)}
-.order-grid {
-  display:grid;grid-template-columns:.8fr 1.2fr;
-  gap:35px;align-items:start;
-}
-.delivery {
-  background:white;padding:16px;border:1px solid #ead6ae;
-  border-radius:12px;margin-top:18px;
-}
-.form-card {
-  background:white;padding:28px;border-radius:20px;
-  border:1px solid #f0dce2;
-  box-shadow:0 12px 35px #7d405012;
-}
-.form-card h3 {font-size:26px;margin:0}
-.form-grid {display:grid;grid-template-columns:1fr 1fr;gap:15px}
-.field {display:flex;flex-direction:column;gap:6px}
-.full {grid-column:1/-1}
-label {font-size:13px;font-weight:700}
-input,select,textarea {
-  width:100%;padding:12px;border:1px solid #e8d7dc;
-  border-radius:9px;background:#fffdfd;color:var(--text);
-}
-input:focus,select:focus,textarea:focus {
-  outline:2px solid #f3c7d4;border-color:var(--rose);
-}
-textarea {min-height:85px;resize:vertical}
-.form-card button {width:100%;margin-top:18px}
-.help {font-size:12px;text-align:center}
-.about-grid {
-  display:grid;grid-template-columns:1fr 1fr;
-  align-items:center;gap:35px;
-}
-.about-grid img {width:100%;height:320px;object-fit:cover;border-radius:18px}
-footer {background:#39262e;color:white;padding:32px 0}
-footer p {color:#e4d4da;font-size:13px}
-.footer-row {
-  display:flex;justify-content:space-between;
-  gap:20px;flex-wrap:wrap;align-items:center;
-}
-footer .logo {color:white}
-footer .logo span {color:var(--gold)}
-.footnote {border-top:1px solid #624752;padding-top:15px;font-size:12px}
-.wa {
-  position:fixed;right:15px;bottom:15px;z-index:10;
-  background:#218c59;color:white;padding:13px 17px;
-  border-radius:30px;box-shadow:0 5px 20px #0002;font-weight:700;
-}
-@media(max-width:750px) {
-  .hero-grid,.order-grid,.about-grid {grid-template-columns:1fr}
-  .hero {padding:40px 0}
-  .hero img {height:320px}
-  .products {grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-  .product img {height:190px}
-  .product-content {padding:12px}
-  .product h3 {font-size:19px}
-  .features {grid-template-columns:1fr}
-  .navlinks {gap:10px;font-size:12px}
-  nav {flex-wrap:wrap}
-}
-@media(max-width:430px) {
-  .navlinks {width:100%;justify-content:space-between}
-  .products {grid-template-columns:1fr}
-  .product img {height:260px}
-  .form-grid {grid-template-columns:1fr}
-  .full {grid-column:auto}
-  .section-title h2 {font-size:30px}
-  .form-card {padding:18px}
-}
+:root{--rose:#e11d48;--pink:#fff1f2;--beige:#fdf6f0;--dark:#2d2d2d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Tajawal',sans-serif;background:var(--beige);color:var(--dark);line-height:1.6}
+.top-bar{background:var(--dark);color:#fff;text-align:center;padding:8px;font-size:14px}
+.top-bar span{color:#fecdd3}
+header{padding:20px;text-align:center;background:white;box-shadow:0 2px 10px rgba(0,0,0,.05);position:sticky;top:0;z-index:10}
+header h1{font-family:'Cormorant Garamond',serif;font-size:32px}
+.phone-badge{display:inline-block;margin-top:8px;background:var(--pink);color:var(--rose);padding:6px 14px;border-radius:20px;font-weight:700;text-decoration:none}
+.hero{padding:40px 20px;text-align:center;max-width:800px;margin:auto}
+.configurator{background:white;max-width:600px;margin:30px auto;padding:24px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.08);border:2px solid #ffe4e6}
+.price-box{background:var(--dark);color:white;padding:16px;border-radius:12px;text-align:center;margin-top:16px}
+.price-box .big{font-size:28px;font-weight:700;color:#fecdd3}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:1100px;margin:40px auto;padding:0 20px}
+.card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.card img{width:100%;height:320px;object-fit:cover}
+.card-body{padding:16px}
+.btn{display:block;width:100%;background:var(--rose);color:white;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:700;margin-top:10px;cursor:pointer}
+.btn-whatsapp{background:#25D366}
+.type-opt{display:flex;gap:8px;flex:1}
+.type-opt button{flex:1;padding:12px;border:2px solid #eee;background:white;border-radius:10px;cursor:pointer}
+.type-opt button.active{border-color:var(--rose);background:var(--pink);color:var(--rose);font-weight:700}
+.row{display:flex;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.row label{font-weight:700;font-size:14px;flex:1 0 100%}
+input,select{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;font-family:inherit;font-size:16px}
 </style>
 </head>
-
 <body>
-<div class="announcement">
-  🌷 Livraison à Taroudant et ses environs uniquement 🌷
-</div>
+
+<div class="top-bar">🚚 التوصيل متوفر في <span>تارودانت و النواحي فقط</span></div>
 
 <header>
-  <nav class="container">
-    <a href="#accueil" class="logo">Rozira <span>Flower</span> ❀</a>
-    <div class="navlinks">
-      <a href="#accueil">Accueil</a>
-      <a href="#bouquets">Bouquets</a>
-      <a href="#histoire">Notre univers</a>
-      <a href="#commande">Commander</a>
-    </div>
-  </nav>
+<h1>Boutique Fati 🌹</h1>
+<p>باقات ورد الساتان التي لا تذبل أبدا</p>
+<a class="phone-badge" href="https://wa.me/212673947714">📞 +212 673-947714</a>
 </header>
 
-<main>
-<section class="hero" id="accueil">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">Fait avec amour ♡</span>
-      <h1>Des fleurs qui durent,<br><em>des émotions</em> qui restent.</h1>
-      <p>
-        Découvrez l'univers délicat de Rozira Flower :
-        des bouquets de fleurs en satin pour offrir un cadeau
-        original et plein de tendresse.
-      </p>
-      <div class="hero-actions">
-        <a class="btn" href="#bouquets">Découvrir les bouquets</a>
-        <a class="btn btn-outline" href="#commande">Commander ♡</a>
-      </div>
-      <p>🎀 Des créations délicates · 📍 Taroudant et alentours</p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=900&q=85" alt="Bouquet floral élégant">
-    </div>
-  </div>
-</section>
-
-<section id="bouquets">
-  <div class="container">
-    <div class="section-title">
-      <span class="eyebrow">Notre collection</span>
-      <h2>Nos bouquets préférés</h2>
-      <p>Choisissez votre bouquet et envoyez votre demande sur WhatsApp.</p>
-    </div>
-
-    <div class="products">
-      <article class="product">
-        <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=700&q=85" alt="Bouquet romantique">
-        <div class="product-content">
-          <h3>Douceur Rose</h3>
-          <p>Un bouquet délicat pour une attention pleine de tendresse.</p>
-          <div class="product-bottom">
-            <span class="price">Prix à confirmer</span>
-            <button class="btn small choose" data-product="Douceur Rose">Choisir ♡</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="product">
-        <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=700&q=85" alt="Bouquet élégant">
-        <div class="product-content">
-          <h3>Éclat d'Or</h3>
-          <p>Une création chaleureuse pour une occasion spéciale.</p>
-          <div class="product-bottom">
-            <span class="price">Prix à confirmer</span>
-            <button class="btn small choose" data-product="Éclat d'Or">Choisir ♡</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="product">
-        <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=700&q=85" alt="Bouquet de roses rouges">
-        <div class="product-content">
-          <h3>Passion Rouge</h3>
-          <p>Un bouquet romantique pour exprimer vos sentiments.</p>
-          <div class="product-bottom">
-            <span class="price">Prix à confirmer</span>
-            <button class="btn small choose" data-product="Passion Rouge">Choisir ♡</button>
-          </div>
-        </div>
-      </article>
-    </div>
-    <p style="text-align:center;font-size:12px">
-      Les photos et les noms sont des exemples. Remplacez-les par les vrais modèles et prix avant publication.
-    </p>
-  </div>
-</section>
-
-<section class="notice-band">
-  <div class="container features">
-    <div class="feature">
-      <div class="feature-icon">🌷</div>
-      <h3>Un cadeau unique</h3>
-      <p>Des bouquets choisis avec soin pour faire plaisir.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🎀</div>
-      <h3>Vos couleurs</h3>
-      <p>Demandez les couleurs et la personnalisation souhaitées.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">📍</div>
-      <h3>Livraison locale</h3>
-      <p>Taroudant et ses environs uniquement.</p>
-    </div>
-  </div>
-</section>
-
-<section class="order" id="commande">
-  <div class="container order-grid">
-    <div>
-      <span class="eyebrow">Votre bouquet vous attend</span>
-      <h2>Faisons plaisir à quelqu'un 🌸</h2>
-      <p>
-        Remplissez le formulaire. WhatsApp s'ouvrira avec votre demande
-        déjà préparée. Vous pourrez vérifier le message puis l'envoyer.
-      </p>
-      <div class="delivery">
-        📍 <strong>Zone de livraison</strong><br>
-        Taroudant et ses environs uniquement.<br>
-        <small>Les frais et la disponibilité sont à confirmer avec la boutique.</small>
-      </div>
-      <div class="delivery">
-        💬 <strong>Commande simple</strong><br>
-        Votre demande sera préparée sur WhatsApp.
-      </div>
-    </div>
-
-    <form class="form-card" id="orderForm">
-      <h3>Votre commande</h3>
-      <p>Tous les champs avec * sont obligatoires.</p>
-
-      <div class="form-grid">
-        <div class="field">
-          <label for="name">Nom complet *</label>
-          <input id="name" name="name" autocomplete="name" required placeholder="Votre nom">
-        </div>
-        <div class="field">
-          <label for="phone">Téléphone *</label>
-          <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="06 00 00 00 00">
-        </div>
-        <div class="field full">
-          <label for="address">Adresse de livraison *</label>
-          <input id="address" name="address" required placeholder="Quartier, rue, commune…">
-        </div>
-        <div class="field">
-          <label for="bouquet">Bouquet souhaité *</label>
-          <select id="bouquet" name="bouquet" required>
-            <option value="">Choisir un bouquet</option>
-            <option>Douceur Rose</option>
-            <option>Éclat d'Or</option>
-            <option>Passion Rouge</option>
-            <option>Autre / personnalisé</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="quantity">Quantité *</label>
-          <select id="quantity" name="quantity" required>
-            <option value="1">1 bouquet</option>
-            <option value="2">2 bouquets</option>
-            <option value="3">3 bouquets</option>
-            <option value="4 ou plus">4 ou plus</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="date">Date souhaitée *</label>
-          <input id="date" name="date" type="date" required>
-        </div>
-        <div class="field">
-          <label for="time">Heure souhaitée *</label>
-          <select id="time" name="time" required>
-            <option value="">Choisir une heure</option>
-            <option>Matin (09h–12h)</option>
-            <option>Midi (12h–15h)</option>
-            <option>Après-midi (15h–18h)</option>
-            <option>Soir (18h–20h)</option>
-          </select>
-        </div>
-        <div class="field full">
-          <label for="details">Couleurs ou message personnalisé</label>
-          <textarea id="details" name="details" placeholder="Ex. : rose pâle et blanc…"></textarea>
-        </div>
-      </div>
-
-      <button class="btn" type="submit">Commander sur WhatsApp ↗</button>
-      <p class="help">La commande sera confirmée après la réponse de la boutique.</p>
-      <p id="status" role="status" style="font-size:13px"></p>
-    </form>
-  </div>
-</section>
-
-<section id="histoire">
-  <div class="container about-grid">
-    <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=900&q=85" alt="Univers floral délicat">
-    <div>
-      <span class="eyebrow">L'univers Rozira</span>
-      <h2>Chaque bouquet raconte une histoire.</h2>
-      <p>
-        Un cadeau délicat, une couleur préférée, une occasion spéciale :
-        partagez votre idée et choisissez une création qui vous ressemble.
-      </p>
-      <p>Avec amour, Rozira Flower ♡</p>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer>
-  <div class="container">
-    <div class="footer-row">
-      <a href="#accueil" class="logo">Rozira <span>Flower</span> ❀</a>
-      <p>Des bouquets délicats pour vos moments précieux.</p>
-      <a href="https://wa.me/212673947714" target="_blank" rel="noopener">Nous contacter sur WhatsApp</a>
-    </div>
-    <div class="footnote">
-      © <span id="year"></span> Rozira Flower · Livraison à Taroudant et ses environs uniquement.
-    </div>
-  </div>
-</footer>
-
-<a class="wa" href="https://wa.me/212673947714?text=Bonjour%20Rozira%20Flower%2C%20je%20souhaite%20des%20informations%20sur%20vos%20bouquets." target="_blank" rel="noopener">☏ WhatsApp</a>
+<div class="configurator" id="config">
+<h3>🧮 حاسبة الثمن - كل وردة = 10 DH</h3>
+<div class="row">
+<label>عدد الورود</label>
+<input type="number" id="nbRoses" value="7" min="1" max="50" oninput="calc()">
+</div>
+<div class="row">
+<label>نوع البوكيه</label>
+<div class="type-opt">
+<button id="btn-bouquet" class="active" onclick="setType('bouquet')">💐 بوكيه كلاسيكي</button>
+<button id="btn-panier" onclick="setType('panier')">🧺 سلة ورد +15 DH</button>
+</div>
+</div>
+<div class="row">
+<div style="flex:1"><label>لون الورد</label>
+<select id="couleur"><option>أحمر ❤️</option><option>أبيض 🤍</option><option>وردي 🩷</option><option>عنابي</option><option>ميكس وردي و أبيض</option></select></div>
+<div style="flex:1"><label>العبارة على الشريط</label><input type="text" id="message" placeholder="مثال: لم تأت بي الصدفة..."></div>
+</div>
+<div class="price-box">
+<div class="big" id="totalPrice">70 DH</div>
+<div style="font-size:12px;opacity:.8" id="detailPrice">7 وردات × 10 = 70</div>
+<a class="btn btn-whatsapp" id="waLink" href="#" target="_blank">اطلب الآن على واتساب 📲</a>
+</div>
+</div>
 
 <script>
-const WHATSAPP_NUMBER = "212673947714";
-
-document.getElementById("year").textContent = new Date().getFullYear();
-
-const dateInput = document.getElementById("date");
-const today = new Date();
-dateInput.min = new Date(
-  today.getTime() - today.getTimezoneOffset() * 60000
-).toISOString().slice(0, 10);
-
-document.querySelectorAll(".choose").forEach(button => {
-  button.addEventListener("click", () => {
-    document.getElementById("bouquet").value = button.dataset.product;
-    document.getElementById("commande").scrollIntoView({behavior:"smooth"});
-  });
-});
-
-document.getElementById("orderForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  const name = document.getElementById("name").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const address = document.getElementById("address").value.trim();
-  const bouquet = document.getElementById("bouquet").value;
-  const quantity = document.getElementById("quantity").value;
-  const date = document.getElementById("date").value;
-  const time = document.getElementById("time").value;
-  const details = document.getElementById("details").value.trim();
-
-  const message = [
-    "Bonjour Rozira Flower 🌷, je souhaite passer une commande :",
-    "",
-    "👤 Nom : " + name,
-    "📱 Téléphone : " + phone,
-    "📍 Adresse : " + address,
-    "🎀 Bouquet : " + bouquet,
-    "🔢 Quantité : " + quantity,
-    "📅 Date souhaitée : " + date,
-    "🕒 Heure souhaitée : " + time,
-    details ? "💌 Personnalisation : " + details : "",
-    "",
-    "Merci de confirmer le prix, la disponibilité et les frais de livraison. La livraison demandée est à Taroudant ou ses environs."
-  ].filter(Boolean).join("\n");
-
-  const url = "https://wa.me/" + WHATSAPP_NUMBER +
-              "?text=" + encodeURIComponent(message);
-
-  document.getElementById("status").textContent =
-    "WhatsApp va s'ouvrir. Vérifiez le message puis appuyez sur Envoyer.";
-
-  window.location.href = url;
-});
+let type='bouquet';
+function setType(t){type=t;document.getElementById('btn-bouquet').classList.toggle('active',t==='bouquet');document.getElementById('btn-panier').classList.toggle('active',t==='panier');calc();}
+function calc(){
+ const nb=parseInt(document.getElementById('nbRoses').value)||1;
+ const couleur=document.getElementById('couleur').value;
+ const msg=document.getElementById('message').value;
+ let total=nb*10; let detail=`${nb} وردات × 10 = ${nb*10}`;
+ if(type==='panier'){total+=15; detail+=` + 15 (سلة) = ${total}`;}
+ document.getElementById('totalPrice').innerText=total+' DH';
+ document.getElementById('detailPrice').innerText=detail;
+ const typeText=type==='bouquet'?'بوكيه كلاسيكي':'سلة ورد';
+ let text=`سلام بوتيك فاتي 🌹%0Aبغيت نطلب:%0A- عدد الورود: ${nb}%0A- اللون: ${couleur}%0A- النوع: ${typeText}%0A- العبارة: ${msg||'بدون'}%0A- الثمن: ${total} DH%0A- التوصيل: تارودانت`;
+ document.getElementById('waLink').href=`https://wa.me/212673947714?text=${text}`;
+}
+calc();
 </script>
 </body>
 </html>
