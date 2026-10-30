@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Roziera Flowers | باقات الورد</title>
-<meta name="description" content="Roziera Flowers - باقات ورود ساتان مصنوعة يدوياً حسب اختيارك.">
+<meta name="description" content="باقات ورود ساتان مصنوعة يدوياً حسب اختيارك">
 
 <style>
 :root {
@@ -26,7 +26,7 @@ body {
 }
 header {
   padding:16px 6%;
-  background:#fff;
+  background:white;
   border-bottom:1px solid #f1dce4;
   display:flex;
   align-items:center;
@@ -66,7 +66,7 @@ nav a:hover {color:var(--rose)}
 .hero h1 span {color:var(--rose)}
 .hero p {margin-bottom:22px}
 .hero-art {
-  background:#fff;
+  background:white;
   padding:12px;
   border-radius:170px 170px 20px 20px;
   box-shadow:0 10px 30px #9d52651c;
@@ -86,7 +86,7 @@ nav a:hover {color:var(--rose)}
 .btn {
   display:inline-block;
   background:var(--rose);
-  color:#fff;
+  color:white;
   border:0;
   padding:12px 22px;
   border-radius:30px;
@@ -167,19 +167,19 @@ input:focus,select:focus,textarea:focus {
   grid-template-columns:repeat(3,minmax(0,1fr));
   gap:9px;
 }
-.color-option {
+.color-option,.extra-option {
   display:flex;
   align-items:center;
-  gap:7px;
-  padding:9px;
+  gap:8px;
+  padding:10px;
   border:1px solid #ead7df;
   border-radius:9px;
   font-size:13px;
   cursor:pointer;
 }
-.color-option input {
-  width:16px;
-  height:16px;
+.color-option input,.extra-option input {
+  width:17px;
+  height:17px;
   accent-color:var(--rose);
   flex-shrink:0;
 }
@@ -231,7 +231,16 @@ input:focus,select:focus,textarea:focus {
   font-size:25px;
   color:var(--rose);
 }
-.notice {font-size:12px;color:#806b73;margin:12px 0}
+.notice {
+  font-size:12px;
+  color:#806b73;
+  margin:12px 0;
+}
+.extras-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+}
 footer {
   background:#442e38;
   color:#fff3f7;
@@ -253,6 +262,7 @@ footer {
 @media(max-width:380px) {
   .gallery {grid-template-columns:1fr}
   .product img {height:240px}
+  .extras-grid {grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -277,12 +287,13 @@ footer {
     <h1>ورود تدوم... وذكريات <span>لا تُنسى</span></h1>
     <p>
       اكتشفي عالم باقات الورود المصنوعة من شرائط الساتان،
-      واختاري الألوان والتغليف الذي يعبر عن ذوقك.
+      واختاري الألوان والتغليف والإضافات التي تعبر عن ذوقك.
       هديتك الخاصة تبدأ من هنا.
     </p>
     <a href="#bouquets" class="btn">اكتشفي باقاتنا</a>
     <a href="#customize" class="btn btn-outline">صممي باقتك</a>
   </div>
+
   <div class="hero-art">
     <img src="WA_1793214452479.jpeg" alt="باقة ورود ساتان">
   </div>
@@ -300,7 +311,7 @@ footer {
       <div class="product-info">
         <h3>باقة الأناقة</h3>
         <p>هدية رقيقة لكل المناسبات.</p>
-        <p class="price">ابتداءً من 10 دراهم للوردة</p>
+        <p class="price">10 دراهم للوردة</p>
       </div>
     </article>
 
@@ -309,7 +320,7 @@ footer {
       <div class="product-info">
         <h3>باقة الرقة</h3>
         <p>ألوان جميلة ولمسة مميزة.</p>
-        <p class="price">ابتداءً من 10 دراهم للوردة</p>
+        <p class="price">10 دراهم للوردة</p>
       </div>
     </article>
 
@@ -318,7 +329,7 @@ footer {
       <div class="product-info">
         <h3>باقة الحب</h3>
         <p>اختيار جميل لمن تحبين.</p>
-        <p class="price">ابتداءً من 10 دراهم للوردة</p>
+        <p class="price">10 دراهم للوردة</p>
       </div>
     </article>
 
@@ -327,7 +338,7 @@ footer {
       <div class="product-info">
         <h3>باقة التميز</h3>
         <p>تصميم يدوي أنيق.</p>
-        <p class="price">ابتداءً من 10 دراهم للوردة</p>
+        <p class="price">10 دراهم للوردة</p>
       </div>
     </article>
 
@@ -336,7 +347,7 @@ footer {
       <div class="product-info">
         <h3>باقة الباستيل</h3>
         <p>ألوان هادئة وناعمة.</p>
-        <p class="price">ابتداءً من 10 دراهم للوردة</p>
+        <p class="price">10 دراهم للوردة</p>
       </div>
     </article>
 
@@ -345,7 +356,7 @@ footer {
       <div class="product-info">
         <h3>باقة حسب الطلب</h3>
         <p>اختاري ألوانك المفضلة.</p>
-        <p class="price">ابتداءً من 10 دراهم للوردة</p>
+        <p class="price">10 دراهم للوردة</p>
       </div>
     </article>
   </div>
@@ -354,7 +365,7 @@ footer {
 <section class="customize" id="customize">
   <div class="section-title">
     <h2>صممي باقتك بنفسك 💗</h2>
-    <p>اختاري التفاصيل التي تحبينها وسنجهز طلبك.</p>
+    <p>اختاري عدد الورود والألوان والتغليف والإضافات.</p>
   </div>
 
   <div class="builder">
@@ -395,7 +406,17 @@ footer {
     <div class="quantity-row">
       <div class="field">
         <label for="quantity">2. عدد الورود</label>
-        <input id="quantity" type="number" min="0" max="100" value="0" placeholder="اختاري عدد الورود">
+        <input
+          id="quantity"
+          type="number"
+          min="0"
+          max="100"
+          step="1"
+          value=""
+          placeholder="اكتبي عدد الورود"
+          inputmode="numeric"
+        >
+        <p class="notice">الثمن 10 دراهم لكل وردة.</p>
       </div>
 
       <div class="field">
@@ -412,22 +433,54 @@ footer {
       <label>4. اختاري نوع التغليف</label>
       <div class="packages">
         <label class="package">
-          <input type="radio" name="packaging" value="تغليف كرافت" data-price="5" checked>
-          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=200" alt="ورق كرافت">
-          <span>🎀 تغليف ورق كرافت (+5 دراهم)</span>
+          <input type="radio" name="packaging" value="كرافت" data-price="0" checked>
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=200" alt="تغليف كرافت">
+          <span>🎀 تغليف كرافت</span>
         </label>
 
         <label class="package">
-          <input type="radio" name="packaging" value="تغليف كريستال" data-price="10">
-          <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=200" alt="تغليف كريستال">
-          <span>✨ تغليف كريستال (+10 دراهم)</span>
+          <input type="radio" name="packaging" value="ورق شفاف أو تغليف فاخر" data-price="10">
+          <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=200" alt="تغليف شفاف">
+          <span>✨ ورق شفاف / تغليف فاخر (+10 دراهم)</span>
         </label>
       </div>
-      <p class="notice">ثمن التغليف يضاف إلى ثمن الورود.</p>
+      <p class="notice">تم احتساب تغليف الكرافت بدون إضافة في الثمن حالياً. أكدي ثمنه قبل النشر إذا كان مختلفاً.</p>
     </div>
 
     <div class="field">
-      <label for="occasion">5. المناسبة</label>
+      <label>5. اختاري الإضافات التي تريدينها</label>
+      <div class="extras-grid">
+
+        <label class="extra-option">
+          <input type="checkbox" name="extra" value="دونتيل" data-price="10">
+          دونتيل (+10 دراهم)
+        </label>
+
+        <label class="extra-option">
+          <input type="checkbox" name="extra" value="فراشة" data-price="5">
+          فراشة 🦋 (+5 دراهم)
+        </label>
+
+        <label class="extra-option">
+          <input type="checkbox" name="extra" value="كتابة" data-price="15">
+          كتابة اسم أو رسالة (+15 درهم)
+        </label>
+
+        <label class="extra-option">
+          <input type="checkbox" name="extra" value="سلة" data-price="10">
+          سلة (+10 دراهم)
+        </label>
+
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="writing">6. ماذا تريدين كتابته؟</label>
+      <input id="writing" type="text" placeholder="اكتبي الاسم أو العبارة إذا اخترت الكتابة">
+    </div>
+
+    <div class="field">
+      <label for="occasion">7. المناسبة</label>
       <select id="occasion">
         <option value="عيد ميلاد">عيد ميلاد</option>
         <option value="نجاح">نجاح</option>
@@ -440,19 +493,19 @@ footer {
     </div>
 
     <div class="field">
-      <label for="giftMessage">6. رسالة بطاقة الإهداء</label>
+      <label for="giftMessage">8. رسالة بطاقة الإهداء</label>
       <textarea id="giftMessage" rows="3" placeholder="اكتبي رسالتك الجميلة هنا..."></textarea>
     </div>
 
     <div class="field">
-      <label for="extras">تفاصيل إضافية</label>
-      <textarea id="extras" rows="3" placeholder="أي ملاحظة أو طلب خاص..."></textarea>
+      <label for="extrasDetails">تفاصيل إضافية</label>
+      <textarea id="extrasDetails" rows="3" placeholder="أي ملاحظة أو طلب خاص..."></textarea>
     </div>
 
     <div class="total">
-      <p>الثمن التقديري</p>
+      <p>الثمن التقديري للباقة</p>
       <strong id="total">0 درهم</strong>
-      <p class="notice">10 دراهم للوردة + ثمن التغليف. التوصيل يُحدد بعد التأكيد.</p>
+      <p class="notice">التوصيل غير مشمول في الثمن، ويتم تحديده بعد التأكيد.</p>
     </div>
 
   </div>
@@ -465,6 +518,7 @@ footer {
   </div>
 
   <form class="builder" id="orderForm">
+
     <div class="field">
       <label for="customerName">الاسم الكامل *</label>
       <input id="customerName" type="text" required placeholder="اكتبي اسمك">
@@ -517,19 +571,30 @@ const totalDisplay = document.getElementById("total");
 function calculateTotal() {
   const rawValue = quantityInput.value.trim();
 
-  const selected = document.querySelector(
+  const selectedPackaging = document.querySelector(
     'input[name="packaging"]:checked'
   );
 
-  const packagingPrice = selected
-    ? Number(selected.dataset.price)
+  const packagingPrice = selectedPackaging
+    ? Number(selectedPackaging.dataset.price)
     : 0;
+
+  const selectedExtras = Array.from(
+    document.querySelectorAll('input[name="extra"]:checked')
+  );
+
+  const extrasPrice = selectedExtras.reduce(function(sum, item) {
+    return sum + Number(item.dataset.price);
+  }, 0);
 
   if (rawValue === "") {
     totalDisplay.textContent = "0 درهم";
     return {
+      valid: false,
       quantity: 0,
-      packaging: selected ? selected.value : "غير محدد",
+      packaging: selectedPackaging ? selectedPackaging.value : "غير محدد",
+      extras: selectedExtras.map(item => item.value),
+      extrasPrice: extrasPrice,
       total: 0
     };
   }
@@ -539,27 +604,35 @@ function calculateTotal() {
   if (!Number.isInteger(quantity) || quantity < 0 || quantity > 100) {
     totalDisplay.textContent = "اختاري عدداً بين 0 و100";
     return {
-      quantity: -1,
-      packaging: selected ? selected.value : "غير محدد",
+      valid: false,
+      quantity: quantity,
+      packaging: selectedPackaging ? selectedPackaging.value : "غير محدد",
+      extras: selectedExtras.map(item => item.value),
+      extrasPrice: extrasPrice,
       total: 0
     };
   }
 
-  const total = quantity * 10 +
-    (quantity > 0 ? packagingPrice : 0);
+  const total = quantity * 10 + packagingPrice + extrasPrice;
 
   totalDisplay.textContent = total + " درهم";
 
   return {
+    valid: true,
     quantity: quantity,
-    packaging: selected ? selected.value : "غير محدد",
+    packaging: selectedPackaging ? selectedPackaging.value : "غير محدد",
+    packagingPrice: packagingPrice,
+    extras: selectedExtras.map(item => item.value),
+    extrasPrice: extrasPrice,
     total: total
   };
 }
 
 quantityInput.addEventListener("input", calculateTotal);
 
-document.querySelectorAll('input[name="packaging"]').forEach(function(input) {
+document.querySelectorAll(
+  'input[name="packaging"], input[name="extra"]'
+).forEach(function(input) {
   input.addEventListener("change", calculateTotal);
 });
 
@@ -568,8 +641,8 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
 
   const result = calculateTotal();
 
-  if (result.quantity < 1) {
-    alert("المرجو اختيار عدد الورود، من 1 حتى 100.");
+  if (!result.valid || result.quantity < 1) {
+    alert("المرجو كتابة عدد صحيح من الورود، ويجب اختيار وردة واحدة على الأقل.");
     quantityInput.focus();
     return;
   }
@@ -578,11 +651,13 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
   const phone = document.getElementById("phone").value.trim();
   const city = document.getElementById("city").value.trim();
   const address = document.getElementById("address").value.trim();
-  const date = document.getElementById("date").value || "يُحدد لاحقاً";
+  const date = document.getElementById("date").value || "يحدد لاحقاً";
   const occasion = document.getElementById("occasion").value;
   const size = document.getElementById("size").value;
+
+  const writing = document.getElementById("writing").value.trim() || "لا توجد";
   const giftMessage = document.getElementById("giftMessage").value.trim() || "لا توجد";
-  const extras = document.getElementById("extras").value.trim() || "لا توجد";
+  const extrasDetails = document.getElementById("extrasDetails").value.trim() || "لا توجد";
 
   const selectedColors = Array.from(
     document.querySelectorAll('input[name="color"]:checked')
@@ -597,8 +672,12 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
     : "لم يتم التحديد";
 
   if (customColor) {
-    colors += "، لون إضافي: " + customColor;
+    colors += "، ألوان إضافية: " + customColor;
   }
+
+  const extrasText = result.extras.length
+    ? result.extras.join("، ")
+    : "بدون إضافات";
 
   const message = [
     "🌸 طلب جديد من موقع Roziera Flowers",
@@ -613,15 +692,21 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
     "🌹 عدد الورود: " + result.quantity,
     "💐 حجم الباقة: " + size,
     "🎀 نوع التغليف: " + result.packaging,
+    "✨ الإضافات: " + extrasText,
+    "✍️ الكتابة المطلوبة: " + writing,
     "🎉 المناسبة: " + occasion,
-    "💌 رسالة الإهداء: " + giftMessage,
-    "📝 تفاصيل إضافية: " + extras,
+    "💌 رسالة بطاقة الإهداء: " + giftMessage,
+    "📝 تفاصيل إضافية: " + extrasDetails,
     "",
-    "💰 الثمن التقديري: " + result.total + " درهم",
+    "💰 ثمن الورود: " + (result.quantity * 10) + " درهم",
+    "💰 ثمن التغليف: " + result.packagingPrice + " درهم",
+    "💰 ثمن الإضافات: " + result.extrasPrice + " درهم",
+    "💰 المجموع التقديري: " + result.total + " درهم",
     "",
     "المرجو تأكيد الطلب وثمن التوصيل. شكراً لكم."
   ].join("\n");
 
+  // تأكدي من رقم واتساب قبل نشر الموقع.
   const whatsappNumber = "212673947714";
 
   const url = "https://wa.me/" + whatsappNumber +
