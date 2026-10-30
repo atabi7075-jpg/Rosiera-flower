@@ -1,394 +1,272 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rozira Flower | Bouquets faits main</title>
-<meta name="description" content="Découvrez les bouquets de fleurs en ruban satin faits à la main par Rozira Flower. Personnalisez votre bouquet et commandez sur WhatsApp.">
+<title>Roziera Flowers | باقات الورد</title>
+<meta name="description" content="Roziera Flowers - باقات ورود ساتان مصنوعة يدوياً حسب اختيارك.">
 
 <style>
 :root {
-  --pink: #f8e5eb;
-  --pink-dark: #d87998;
-  --rose: #b94f76;
-  --cream: #fffaf7;
-  --gold: #c7a36b;
-  --text: #49343c;
+  --pink:#f8e5eb;
+  --pink2:#e8a9bd;
+  --rose:#b94f76;
+  --gold:#c7a36b;
+  --cream:#fffaf7;
+  --text:#49343c;
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth}
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--cream);
-  color: var(--text);
-  line-height: 1.6;
+  font-family:Arial,Tahoma,sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  line-height:1.8;
 }
-
 header {
-  background: rgba(255,250,247,.97);
-  padding: 17px 6%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #f0dce3;
+  padding:16px 6%;
+  background:#fff;
+  border-bottom:1px solid #f1dce4;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
 }
-
 .logo {
-  font-family: Georgia, serif;
-  font-size: 26px;
-  font-weight: bold;
-  color: var(--rose);
-  letter-spacing: 1px;
+  color:var(--rose);
+  font-family:Georgia,serif;
+  font-size:25px;
+  font-weight:bold;
+  direction:ltr;
 }
-
-.logo span {
-  color: var(--gold);
-}
-
-nav {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
+.logo span {color:var(--gold)}
+nav {display:flex;gap:17px;flex-wrap:wrap}
 nav a {
-  text-decoration: none;
-  color: var(--text);
-  font-size: 14px;
+  color:var(--text);
+  text-decoration:none;
+  font-size:14px;
 }
-
-nav a:hover {
-  color: var(--rose);
-}
-
+nav a:hover {color:var(--rose)}
 .hero {
-  padding: 65px 7%;
-  display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  align-items: center;
-  gap: 35px;
-  background: linear-gradient(135deg, #fff5f7, #f7e1e9);
+  padding:55px 7%;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;
+  gap:30px;
+  background:linear-gradient(135deg,#fff5f7,#f6dfe8);
 }
-
-.eyebrow {
-  color: var(--rose);
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
 .hero h1 {
-  font-family: Georgia, serif;
-  font-size: clamp(34px, 5vw, 56px);
-  line-height: 1.15;
-  margin: 15px 0;
+  font-family:Georgia,serif;
+  font-size:clamp(32px,5vw,53px);
+  line-height:1.4;
+  margin:15px 0;
 }
-
-.hero h1 span {
-  color: var(--rose);
-}
-
-.hero p {
-  margin-bottom: 24px;
-  max-width: 500px;
-}
-
+.hero h1 span {color:var(--rose)}
+.hero p {margin-bottom:22px}
 .hero-art {
-  background: #fff;
-  padding: 14px;
-  border-radius: 180px 180px 22px 22px;
-  box-shadow: 0 12px 35px #9d52651c;
+  background:#fff;
+  padding:12px;
+  border-radius:170px 170px 20px 20px;
+  box-shadow:0 10px 30px #9d52651c;
 }
-
 .hero-art img {
-  width: 100%;
-  height: 370px;
-  object-fit: cover;
-  border-radius: 170px 170px 15px 15px;
-  display: block;
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  border-radius:160px 160px 15px 15px;
+  display:block;
 }
-
+.eyebrow {
+  color:var(--rose);
+  font-size:13px;
+  font-weight:bold;
+}
 .btn {
-  display: inline-block;
-  border: none;
-  border-radius: 30px;
-  padding: 13px 22px;
-  background: var(--rose);
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
+  display:inline-block;
+  background:var(--rose);
+  color:#fff;
+  border:0;
+  padding:12px 22px;
+  border-radius:30px;
+  text-decoration:none;
+  cursor:pointer;
+  font-weight:bold;
+  font-size:14px;
 }
-
-.btn:hover {
-  background: #963858;
-}
-
+.btn:hover {background:#963858}
 .btn-outline {
-  background: transparent;
-  color: var(--rose);
-  border: 1px solid var(--rose);
-  margin-left: 8px;
+  background:transparent;
+  border:1px solid var(--rose);
+  color:var(--rose);
+  margin-right:7px;
 }
-
-.btn-outline:hover {
-  color: white;
-}
-
-section {
-  padding: 55px 6%;
-}
-
+.btn-outline:hover {color:white}
+section {padding:55px 6%}
 .section-title {
-  text-align: center;
-  margin-bottom: 30px;
+  text-align:center;
+  margin-bottom:30px;
 }
-
 .section-title h2 {
-  font-family: Georgia, serif;
-  font-size: 32px;
-  margin-bottom: 8px;
+  font-family:Georgia,serif;
+  font-size:30px;
+  margin-bottom:5px;
 }
-
-.section-title p {
-  color: #806b73;
-  font-size: 14px;
-}
-
+.section-title p {color:#806b73;font-size:14px}
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
 }
-
 .product {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 5px 22px #70405212;
-  border: 1px solid #f1e2e7;
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  border:1px solid #f1e2e7;
+  box-shadow:0 5px 20px #70405210;
 }
-
 .product img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  display: block;
-  background: var(--pink);
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  display:block;
 }
-
-.product-info {
-  padding: 16px;
-}
-
-.product-info h3 {
-  font-family: Georgia, serif;
-  font-size: 20px;
-}
-
-.price {
-  color: var(--rose);
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-.small-note {
-  color: #89747b;
-  font-size: 12px;
-  margin-top: 5px;
-}
-
-.customize {
-  background: #fff0f4;
-}
-
+.product-info {padding:15px}
+.product-info h3 {font-size:19px}
+.price {color:var(--rose);font-weight:bold}
+.customize {background:#fff0f4}
 .builder {
-  max-width: 850px;
-  margin: auto;
-  background: white;
-  padding: 25px;
-  border-radius: 18px;
-  box-shadow: 0 5px 22px #70405210;
+  max-width:850px;
+  margin:auto;
+  background:white;
+  border-radius:18px;
+  padding:25px;
+  box-shadow:0 5px 22px #70405210;
 }
-
-.field {
-  margin-bottom: 20px;
+.field {margin-bottom:19px}
+.field label,.field legend {
+  display:block;
+  font-weight:bold;
+  margin-bottom:8px;
 }
-
-.field label,
-.field legend {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 8px;
+input,select,textarea {
+  width:100%;
+  padding:12px;
+  border:1px solid #e6cdd6;
+  border-radius:9px;
+  background:white;
+  color:var(--text);
+  font:inherit;
 }
-
-input, select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #e6cdd6;
-  border-radius: 9px;
-  background: white;
-  color: var(--text);
-  font: inherit;
+input:focus,select:focus,textarea:focus {
+  outline:2px solid #e8b3c5;
 }
-
-input:focus, select:focus, textarea:focus {
-  outline: 2px solid #e8b3c5;
-  border-color: var(--rose);
-}
-
 .colors {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:9px;
 }
-
 .color-option {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid #ead7df;
-  border-radius: 10px;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 13px;
-  background: #fffdfd;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  padding:9px;
+  border:1px solid #ead7df;
+  border-radius:9px;
+  font-size:13px;
+  cursor:pointer;
 }
-
 .color-option input {
-  width: 16px;
-  height: 16px;
-  accent-color: var(--rose);
-  flex-shrink: 0;
+  width:16px;
+  height:16px;
+  accent-color:var(--rose);
+  flex-shrink:0;
 }
-
 .color-dot {
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-  display: inline-block;
-  flex-shrink: 0;
+  width:17px;
+  height:17px;
+  border-radius:50%;
+  border:1px solid #ddd;
+  flex-shrink:0;
 }
-
+.packages {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.package {
+  border:1px solid #ead7df;
+  border-radius:12px;
+  padding:14px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  cursor:pointer;
+}
+.package input {
+  width:18px;
+  flex-shrink:0;
+  accent-color:var(--rose);
+}
+.package img {
+  width:75px;
+  height:75px;
+  object-fit:cover;
+  border-radius:8px;
+}
 .quantity-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
 }
-
 .total {
-  background: #fff5f8;
-  border: 1px dashed var(--pink-dark);
-  border-radius: 12px;
-  padding: 18px;
-  margin: 20px 0;
+  background:#fff5f8;
+  border:1px dashed var(--pink2);
+  border-radius:12px;
+  padding:17px;
+  margin:20px 0;
 }
-
 .total strong {
-  font-size: 25px;
-  color: var(--rose);
+  font-size:25px;
+  color:var(--rose);
 }
-
-.order-form {
-  max-width: 700px;
-  margin: auto;
+.notice {font-size:12px;color:#806b73;margin:12px 0}
+.reviews {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:15px;
 }
-
-.order-form .field {
-  margin-bottom: 15px;
+.review {
+  background:white;
+  padding:18px;
+  border:1px solid #f1e2e7;
+  border-radius:13px;
 }
-
-.notice {
-  font-size: 13px;
-  color: #816b73;
-  margin: 12px 0 20px;
-}
-
+.stars {color:#d3a23e}
 footer {
-  padding: 28px 6%;
-  text-align: center;
-  background: #442e38;
-  color: #fff3f7;
+  background:#442e38;
+  color:#fff3f7;
+  padding:30px 6%;
+  text-align:center;
 }
-
-footer p {
-  font-size: 13px;
-  margin-top: 5px;
+footer a {color:#fff3f7;margin:5px;text-decoration:none}
+@media(max-width:700px) {
+  header {justify-content:center}
+  nav {justify-content:center}
+  .hero {grid-template-columns:1fr;padding:40px 6%}
+  .hero-art img {height:290px}
+  .gallery {grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+  .product img {height:180px}
+  .colors {grid-template-columns:repeat(2,minmax(0,1fr))}
+  .packages {grid-template-columns:1fr}
+  .reviews {grid-template-columns:1fr}
+  .builder {padding:16px}
+  .quantity-row {grid-template-columns:1fr;gap:0}
 }
-
-@media (max-width: 700px) {
-  header {
-    justify-content: center;
-    text-align: center;
-  }
-
-  nav {
-    justify-content: center;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 42px 6%;
-  }
-
-  .hero-art img {
-    height: 300px;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-  }
-
-  .product img {
-    height: 190px;
-  }
-
-  .product-info {
-    padding: 12px;
-  }
-
-  .product-info h3 {
-    font-size: 17px;
-  }
-
-  .colors {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .builder {
-    padding: 17px;
-  }
-
-  .quantity-row {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-}
-
-@media (max-width: 380px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .product img {
-    height: 250px;
-  }
+@media(max-width:380px) {
+  .gallery {grid-template-columns:1fr}
+  .product img {height:240px}
 }
 </style>
 </head>
@@ -396,315 +274,274 @@ footer p {
 <body>
 
 <header>
-  <a class="logo" href="#accueil" style="text-decoration:none">
-    Rozira <span>Flower</span> 🌸
-  </a>
-
+  <div class="logo">Roziera <span>Flowers</span> 🌸</div>
   <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#bouquets">Nos bouquets</a>
-    <a href="#personnaliser">Personnaliser</a>
-    <a href="#commande">Commander</a>
+    <a href="#home">الرئيسية</a>
+    <a href="#bouquets">باقاتنا</a>
+    <a href="#customize">صممي باقتك</a>
+    <a href="#reviews">آراء الزبونات</a>
+    <a href="#order">الطلب</a>
   </nav>
 </header>
 
 <main>
-<section class="hero" id="accueil">
-  <div>
-    <div class="eyebrow">Fait main avec amour</div>
-    <h1>Des fleurs qui durent, des souvenirs qui <span>restent.</span></h1>
-    <p>
-      Découvrez nos bouquets de fleurs en ruban satin, confectionnés
-      à la main pour offrir un cadeau unique à chaque occasion.
-    </p>
-    <a href="#bouquets" class="btn">Découvrir les bouquets</a>
-    <a href="#personnaliser" class="btn btn-outline">Créer mon bouquet</a>
-  </div>
 
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow">🌸 مصنوع بحب وعناية</div>
+    <h1>ورود تدوم... وذكريات <span>لا تُنسى</span></h1>
+    <p>
+      اكتشفي عالم باقات الورود المصنوعة من شرائط الساتان،
+      واختاري الألوان والتغليف الذي يعبر عن ذوقك.
+      هديتك الخاصة تبدأ من هنا.
+    </p>
+    <a href="#bouquets" class="btn">اكتشفي باقاتنا</a>
+    <a href="#customize" class="btn btn-outline">صممي باقتك</a>
+  </div>
   <div class="hero-art">
-    <img src="WA_1793214452479.jpeg"
-         alt="Bouquet de fleurs en ruban satin fait main">
+    <img src="WA_1793214452479.jpeg" alt="باقة ورود ساتان">
   </div>
 </section>
 
 <section id="bouquets">
   <div class="section-title">
-    <h2>Nos créations</h2>
-    <p>Chaque bouquet est préparé avec soin pour vous.</p>
+    <h2>باقاتنا المميزة</h2>
+    <p>كل باقة مصنوعة يدوياً بكل حب.</p>
   </div>
-
   <div class="gallery">
     <article class="product">
-      <img src="WA_1793214452479.jpeg" alt="Bouquet satin 1" loading="lazy">
+      <img src="WA_1793214452479.jpeg" alt="باقة ورد أولى" loading="lazy">
       <div class="product-info">
-        <h3>Bouquet Satin Élégance</h3>
-        <p>Un cadeau délicat et intemporel.</p>
-        <p class="price">À partir de 10 DH / fleur</p>
+        <h3>باقة الأناقة</h3>
+        <p>هدية رقيقة لكل المناسبات.</p>
+        <p class="price">ابتداءً من 10 دراهم للوردة</p>
       </div>
     </article>
-
     <article class="product">
-      <img src="WA_1793214494011.jpeg" alt="Bouquet satin 2" loading="lazy">
+      <img src="WA_1793214494011.jpeg" alt="باقة ورد ثانية" loading="lazy">
       <div class="product-info">
-        <h3>Bouquet Douceur</h3>
-        <p>Une attention pleine de tendresse.</p>
-        <p class="price">À partir de 10 DH / fleur</p>
+        <h3>باقة الرقة</h3>
+        <p>ألوان جميلة ولمسة مميزة.</p>
+        <p class="price">ابتداءً من 10 دراهم للوردة</p>
       </div>
     </article>
-
     <article class="product">
-      <img src="WA_1793214518687.jpeg" alt="Bouquet satin 3" loading="lazy">
+      <img src="WA_1793214518687.jpeg" alt="باقة ورد ثالثة" loading="lazy">
       <div class="product-info">
-        <h3>Bouquet Romantique</h3>
-        <p>Parfait pour faire plaisir.</p>
-        <p class="price">À partir de 10 DH / fleur</p>
+        <h3>باقة الحب</h3>
+        <p>اختيار جميل لمن تحبين.</p>
+        <p class="price">ابتداءً من 10 دراهم للوردة</p>
       </div>
     </article>
-
     <article class="product">
-      <img src="WA_1793214532636.jpeg" alt="Bouquet satin 4" loading="lazy">
+      <img src="WA_1793214532636.jpeg" alt="باقة ورد رابعة" loading="lazy">
       <div class="product-info">
-        <h3>Bouquet Signature</h3>
-        <p>Une création originale et raffinée.</p>
-        <p class="price">À partir de 10 DH / fleur</p>
+        <h3>باقة التميز</h3>
+        <p>تصميم يدوي أنيق.</p>
+        <p class="price">ابتداءً من 10 دراهم للوردة</p>
       </div>
     </article>
-
     <article class="product">
-      <img src="WA_1793214564371.jpeg" alt="Bouquet satin 5" loading="lazy">
+      <img src="WA_1793214564371.jpeg" alt="باقة ورد خامسة" loading="lazy">
       <div class="product-info">
-        <h3>Bouquet Pastel</h3>
-        <p>Des couleurs douces pour un beau cadeau.</p>
-        <p class="price">À partir de 10 DH / fleur</p>
+        <h3>باقة الباستيل</h3>
+        <p>ألوان هادئة وناعمة.</p>
+        <p class="price">ابتداءً من 10 دراهم للوردة</p>
       </div>
     </article>
-
     <article class="product">
-      <img src="WA_1793214594802.jpeg" alt="Bouquet satin 6" loading="lazy">
+      <img src="WA_1793214594802.jpeg" alt="باقة ورد سادسة" loading="lazy">
       <div class="product-info">
-        <h3>Bouquet Personnalisé</h3>
-        <p>Choisissez les couleurs qui vous ressemblent.</p>
-        <p class="price">À partir de 10 DH / fleur</p>
+        <h3>باقة حسب الطلب</h3>
+        <p>اختاري ألوانك المفضلة.</p>
+        <p class="price">ابتداءً من 10 دراهم للوردة</p>
       </div>
     </article>
   </div>
 </section>
 
-<section class="customize" id="personnaliser">
+<section class="customize" id="customize">
   <div class="section-title">
-    <h2>Créez votre bouquet</h2>
-    <p>Choisissez vos couleurs, le nombre de fleurs et l'emballage.</p>
+    <h2>صممي باقتك بنفسك 💗</h2>
+    <p>اختاري التفاصيل التي تحبينها وسنجهز طلبك.</p>
   </div>
 
   <div class="builder">
     <div class="field">
       <fieldset style="border:0">
-        <legend>1. Choisissez une ou plusieurs couleurs</legend>
-
+        <legend>1. اختاري لوناً أو أكثر</legend>
         <div class="colors">
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Rouge">
-            <span class="color-dot" style="background:#e53945"></span> Rouge
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Rose">
-            <span class="color-dot" style="background:#e77ca5"></span> Rose
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Rose clair">
-            <span class="color-dot" style="background:#ffd6e3"></span> Rose clair
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Blanc">
-            <span class="color-dot" style="background:#ffffff"></span> Blanc
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Noir">
-            <span class="color-dot" style="background:#222222"></span> Noir
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Bordeaux">
-            <span class="color-dot" style="background:#800020"></span> Bordeaux
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Violet">
-            <span class="color-dot" style="background:#7e57c2"></span> Violet
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Lilas">
-            <span class="color-dot" style="background:#c8a2c8"></span> Lilas
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Bleu">
-            <span class="color-dot" style="background:#2474c6"></span> Bleu
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Bleu ciel">
-            <span class="color-dot" style="background:#87ceeb"></span> Bleu ciel
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Vert">
-            <span class="color-dot" style="background:#3c9b62"></span> Vert
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Vert clair">
-            <span class="color-dot" style="background:#b8d8a8"></span> Vert clair
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Jaune">
-            <span class="color-dot" style="background:#ffdf42"></span> Jaune
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Orange">
-            <span class="color-dot" style="background:#f28c28"></span> Orange
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Beige">
-            <span class="color-dot" style="background:#d9c1a0"></span> Beige
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Gris">
-            <span class="color-dot" style="background:#9e9e9e"></span> Gris
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Doré">
-            <span class="color-dot" style="background:#d4af37"></span> Doré
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Marron">
-            <span class="color-dot" style="background:#795548"></span> Marron
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Fuchsia">
-            <span class="color-dot" style="background:#ff00a8"></span> Fuchsia
-          </label>
-
-          <label class="color-option">
-            <input type="checkbox" name="color" value="Turquoise">
-            <span class="color-dot" style="background:#40e0d0"></span> Turquoise
-          </label>
+          <label class="color-option"><input type="checkbox" name="color" value="أحمر"><span class="color-dot" style="background:#e53945"></span>أحمر</label>
+          <label class="color-option"><input type="checkbox" name="color" value="وردي"><span class="color-dot" style="background:#e77ca5"></span>وردي</label>
+          <label class="color-option"><input type="checkbox" name="color" value="وردي فاتح"><span class="color-dot" style="background:#ffd6e3"></span>وردي فاتح</label>
+          <label class="color-option"><input type="checkbox" name="color" value="أبيض"><span class="color-dot" style="background:#fff"></span>أبيض</label>
+          <label class="color-option"><input type="checkbox" name="color" value="أسود"><span class="color-dot" style="background:#222"></span>أسود</label>
+          <label class="color-option"><input type="checkbox" name="color" value="عنابي"><span class="color-dot" style="background:#800020"></span>عنابي</label>
+          <label class="color-option"><input type="checkbox" name="color" value="بنفسجي"><span class="color-dot" style="background:#7e57c2"></span>بنفسجي</label>
+          <label class="color-option"><input type="checkbox" name="color" value="ليلكي"><span class="color-dot" style="background:#c8a2c8"></span>ليلكي</label>
+          <label class="color-option"><input type="checkbox" name="color" value="أزرق"><span class="color-dot" style="background:#2474c6"></span>أزرق</label>
+          <label class="color-option"><input type="checkbox" name="color" value="أزرق سماوي"><span class="color-dot" style="background:#87ceeb"></span>أزرق سماوي</label>
+          <label class="color-option"><input type="checkbox" name="color" value="أخضر"><span class="color-dot" style="background:#3c9b62"></span>أخضر</label>
+          <label class="color-option"><input type="checkbox" name="color" value="أخضر فاتح"><span class="color-dot" style="background:#b8d8a8"></span>أخضر فاتح</label>
+          <label class="color-option"><input type="checkbox" name="color" value="أصفر"><span class="color-dot" style="background:#ffdf42"></span>أصفر</label>
+          <label class="color-option"><input type="checkbox" name="color" value="برتقالي"><span class="color-dot" style="background:#f28c28"></span>برتقالي</label>
+          <label class="color-option"><input type="checkbox" name="color" value="بيج"><span class="color-dot" style="background:#d9c1a0"></span>بيج</label>
+          <label class="color-option"><input type="checkbox" name="color" value="رمادي"><span class="color-dot" style="background:#9e9e9e"></span>رمادي</label>
+          <label class="color-option"><input type="checkbox" name="color" value="ذهبي"><span class="color-dot" style="background:#d4af37"></span>ذهبي</label>
+          <label class="color-option"><input type="checkbox" name="color" value="بني"><span class="color-dot" style="background:#795548"></span>بني</label>
+          <label class="color-option"><input type="checkbox" name="color" value="فوشيا"><span class="color-dot" style="background:#ff00a8"></span>فوشيا</label>
+          <label class="color-option"><input type="checkbox" name="color" value="فيروزي"><span class="color-dot" style="background:#40e0d0"></span>فيروزي</label>
         </div>
       </fieldset>
     </div>
 
     <div class="field">
-      <label for="customColor">Autre couleur ou combinaison personnalisée</label>
-      <input id="customColor" type="text"
-             placeholder="Ex. : rouge et blanc, bleu marine...">
+      <label for="customColor">لون آخر أو مزيج ألوان</label>
+      <input id="customColor" type="text" placeholder="مثلاً: أحمر وأبيض">
     </div>
 
     <div class="quantity-row">
       <div class="field">
-        <label for="quantity">2. Nombre de fleurs</label>
-        <input id="quantity" type="number" min="1" max="100"
-               value="10" inputmode="numeric">
+        <label for="quantity">2. عدد الورود</label>
+        <input id="quantity" type="number" min="1" max="100" value="10">
       </div>
-
       <div class="field">
-        <label for="packaging">3. Emballage</label>
-        <select id="packaging">
-          <option value="0">Simple — inclus</option>
-          <option value="5">Élégant (+5 DH)</option>
-          <option value="10">Premium (+10 DH)</option>
+        <label for="size">3. حجم الباقة</label>
+        <select id="size">
+          <option value="صغيرة">صغيرة</option>
+          <option value="متوسطة">متوسطة</option>
+          <option value="كبيرة">كبيرة</option>
         </select>
       </div>
     </div>
 
     <div class="field">
-      <label for="extras">4. Détails supplémentaires</label>
-      <textarea id="extras" rows="3"
-        placeholder="Ex. : petit message, style souhaité, occasion..."></textarea>
+      <label>4. اختاري نوع التغليف</label>
+      <div class="packages">
+        <label class="package">
+          <input type="radio" name="packaging" value="تغليف كرافت" data-price="5" checked>
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=200" alt="ورق كرافت">
+          <span>🎀 تغليف ورق كرافت (+5 دراهم)</span>
+        </label>
+        <label class="package">
+          <input type="radio" name="packaging" value="تغليف كريستال" data-price="10">
+          <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=200" alt="تغليف كريستال">
+          <span>✨ تغليف كريستال (+10 دراهم)</span>
+        </label>
+      </div>
+      <p class="notice">ثمن التغليف يضاف إلى ثمن الورود.</p>
+    </div>
+
+    <div class="field">
+      <label for="occasion">5. المناسبة</label>
+      <select id="occasion">
+        <option value="عيد ميلاد">عيد ميلاد</option>
+        <option value="نجاح">نجاح</option>
+        <option value="خطوبة">خطوبة</option>
+        <option value="زفاف">زفاف</option>
+        <option value="عيد الأم">عيد الأم</option>
+        <option value="هدية لصديقة">هدية لصديقة</option>
+        <option value="مناسبة أخرى">مناسبة أخرى</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="giftMessage">6. رسالة بطاقة الإهداء</label>
+      <textarea id="giftMessage" rows="3" placeholder="اكتبي رسالتك الجميلة هنا..."></textarea>
+    </div>
+
+    <div class="field">
+      <label for="extras">تفاصيل إضافية</label>
+      <textarea id="extras" rows="3" placeholder="أي ملاحظة أو طلب خاص..."></textarea>
     </div>
 
     <div class="total">
-      <p>Estimation du prix</p>
-      <strong id="total">100 DH</strong>
-      <p class="small-note">
-        Calcul estimatif : 10 DH par fleur, plus l'emballage choisi.
-        Les frais de livraison sont à confirmer.
-      </p>
+      <p>الثمن التقديري</p>
+      <strong id="total">105 دراهم</strong>
+      <p class="notice">10 دراهم للوردة + ثمن التغليف. التوصيل يُحدد بعد التأكيد.</p>
     </div>
-
-    <a href="#commande" class="btn">Continuer la commande</a>
   </div>
 </section>
 
-<section id="commande">
+<section id="reviews">
   <div class="section-title">
-    <h2>Passer une commande</h2>
-    <p>Remplissez les informations et envoyez votre demande sur WhatsApp.</p>
+    <h2>آراء زبوناتنا 💗</h2>
+    <p>رضاكن هو أجمل هدية لنا.</p>
+  </div>
+  <div class="reviews">
+    <article class="review">
+      <div class="stars">★★★★★</div>
+      <p>باقة جميلة ومصنوعة بعناية كبيرة.</p>
+      <small>مثال لتقييم زبونة</small>
+    </article>
+    <article class="review">
+      <div class="stars">★★★★★</div>
+      <p>الألوان رائعة والتغليف أنيق.</p>
+      <small>مثال لتقييم زبونة</small>
+    </article>
+    <article class="review">
+      <div class="stars">★★★★★</div>
+      <p>فكرة هدية مميزة، أعجبتني كثيراً.</p>
+      <small>مثال لتقييم زبونة</small>
+    </article>
+  </div>
+  <p class="notice" style="text-align:center">
+    هذه أمثلة فقط، يجب تعويضها بتقييمات حقيقية بموافقة أصحابها.
+  </p>
+</section>
+
+<section id="order">
+  <div class="section-title">
+    <h2>إتمام الطلب</h2>
+    <p>أدخلي معلوماتك لإرسال تفاصيل الباقة عبر واتساب.</p>
   </div>
 
-  <form class="order-form" id="orderForm">
+  <form class="builder" id="orderForm">
     <div class="field">
-      <label for="customerName">Nom complet *</label>
-      <input id="customerName" type="text" required
-             placeholder="Votre nom">
+      <label for="customerName">الاسم الكامل *</label>
+      <input id="customerName" type="text" required placeholder="اكتبي اسمك">
     </div>
-
     <div class="field">
-      <label for="phone">Téléphone *</label>
-      <input id="phone" type="tel" required
-             placeholder="Votre numéro de téléphone">
+      <label for="phone">رقم الهاتف *</label>
+      <input id="phone" type="tel" required placeholder="رقم هاتفك">
     </div>
-
     <div class="field">
-      <label for="city">Ville *</label>
-      <input id="city" type="text" required
-             placeholder="Ex. : Taroudant, Agadir...">
+      <label for="city">المدينة *</label>
+      <input id="city" type="text" required placeholder="مثلاً: أكادير">
     </div>
-
     <div class="field">
-      <label for="address">Adresse de livraison *</label>
-      <textarea id="address" rows="2" required
-                placeholder="Quartier, rue et détails de l'adresse"></textarea>
+      <label for="address">عنوان التوصيل *</label>
+      <textarea id="address" rows="2" required placeholder="الحي والشارع وتفاصيل العنوان"></textarea>
     </div>
-
     <div class="field">
-      <label for="date">Date souhaitée</label>
+      <label for="date">تاريخ التوصيل المطلوب</label>
       <input id="date" type="date">
     </div>
-
     <p class="notice">
-      En cliquant sur le bouton, WhatsApp s'ouvrira avec les détails
-      de votre commande. Vous pourrez vérifier le message avant de l'envoyer.
+      عند الضغط على الزر، ستفتح محادثة واتساب برسالة جاهزة.
+      راجعي الرسالة واضغطي إرسال.
     </p>
-
-    <button type="submit" class="btn">Commander sur WhatsApp</button>
+    <button type="submit" class="btn">إرسال الطلب عبر واتساب</button>
   </form>
 </section>
+
 </main>
 
 <footer>
   <div class="logo" style="color:#fff3f7">
-    Rozira <span>Flower</span> 🌸
+    Roziera <span>Flowers</span> 🌸
   </div>
-  <p>Des bouquets en satin faits avec amour.</p>
-  <p>Livraison à Taroudant et dans les environs, selon confirmation.</p>
-  <p>© 2026 Rozira Flower — Tous droits réservés.</p>
+  <p>باقات ورد ساتان مصنوعة يدوياً بكل حب.</p>
+  <p>شكراً لثقتكن بنا 💗</p>
+  <div style="margin-top:15px">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+  </div>
+  <p>© 2026 Roziera Flowers</p>
 </footer>
 
 <script>
 const quantityInput = document.getElementById("quantity");
-const packagingInput = document.getElementById("packaging");
 const totalDisplay = document.getElementById("total");
 
 function calculateTotal() {
@@ -712,18 +549,33 @@ function calculateTotal() {
 
   if (!Number.isFinite(quantity)) quantity = 1;
   quantity = Math.max(1, Math.min(100, quantity));
-
   quantityInput.value = quantity;
 
-  const packaging = Number(packagingInput.value) || 0;
-  const total = (quantity * 10) + packaging;
+  const selected = document.querySelector(
+    'input[name="packaging"]:checked'
+  );
 
-  totalDisplay.textContent = total + " DH";
-  return { quantity, packaging, total };
+  const packagingPrice = selected
+    ? Number(selected.dataset.price)
+    : 0;
+
+  const total = quantity * 10 + packagingPrice;
+
+  totalDisplay.textContent = total + " درهم";
+
+  return {
+    quantity: quantity,
+    packaging: selected ? selected.value : "غير محدد",
+    packagingPrice: packagingPrice,
+    total: total
+  };
 }
 
 quantityInput.addEventListener("input", calculateTotal);
-packagingInput.addEventListener("change", calculateTotal);
+
+document.querySelectorAll('input[name="packaging"]').forEach(function(input) {
+  input.addEventListener("change", calculateTotal);
+});
 
 document.getElementById("orderForm").addEventListener("submit", function(event) {
   event.preventDefault();
@@ -732,8 +584,11 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
   const phone = document.getElementById("phone").value.trim();
   const city = document.getElementById("city").value.trim();
   const address = document.getElementById("address").value.trim();
-  const date = document.getElementById("date").value || "À convenir";
-  const extras = document.getElementById("extras").value.trim() || "Aucun";
+  const date = document.getElementById("date").value || "يُحدد لاحقاً";
+  const occasion = document.getElementById("occasion").value;
+  const size = document.getElementById("size").value;
+  const giftMessage = document.getElementById("giftMessage").value.trim() || "لا توجد";
+  const extras = document.getElementById("extras").value.trim() || "لا توجد";
 
   const selectedColors = Array.from(
     document.querySelectorAll('input[name="color"]:checked')
@@ -742,36 +597,44 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
   });
 
   const customColor = document.getElementById("customColor").value.trim();
-  const colorText = selectedColors.length ? selectedColors.join(", ") : "À confirmer";
-  const allColors = customColor
-    ? colorText + " / Autre : " + customColor
-    : colorText;
+
+  let colors = selectedColors.length
+    ? selectedColors.join("، ")
+    : "لم يتم التحديد";
+
+  if (customColor) {
+    colors += "، لون إضافي: " + customColor;
+  }
 
   const result = calculateTotal();
-  const packagingNames = {
-    "0": "Simple — inclus",
-    "5": "Élégant (+5 DH)",
-    "10": "Premium (+10 DH)"
-  };
 
-  // Vérifiez ce numéro avant de publier le site.
+  const message = [
+    "🌸 طلب جديد من موقع Roziera Flowers",
+    "",
+    "👤 الاسم: " + name,
+    "📞 الهاتف: " + phone,
+    "📍 المدينة: " + city,
+    "🏠 العنوان: " + address,
+    "📅 تاريخ التوصيل: " + date,
+    "",
+    "🎨 الألوان: " + colors,
+    "🌹 عدد الورود: " + result.quantity,
+    "💐 حجم الباقة: " + size,
+    "🎀 نوع التغليف: " + result.packaging,
+    "🎉 المناسبة: " + occasion,
+    "💌 رسالة الإهداء: " + giftMessage,
+    "📝 تفاصيل إضافية: " + extras,
+    "",
+    "💰 الثمن التقديري: " + result.total + " درهم",
+    "",
+    "المرجو تأكيد الطلب وثمن التوصيل. شكراً لكم."
+  ].join("\n");
+
   const whatsappNumber = "212673947714";
 
-  const message =
-    "Bonjour Rozira Flower ! Je souhaite commander un bouquet.%0A%0A" +
-    "*Nom :* " + encodeURIComponent(name) + "%0A" +
-    "*Téléphone :* " + encodeURIComponent(phone) + "%0A" +
-    "*Ville :* " + encodeURIComponent(city) + "%0A" +
-    "*Adresse :* " + encodeURIComponent(address) + "%0A" +
-    "*Date souhaitée :* " + encodeURIComponent(date) + "%0A" +
-    "*Couleurs choisies :* " + encodeURIComponent(allColors) + "%0A" +
-    "*Nombre de fleurs :* " + result.quantity + "%0A" +
-    "*Emballage :* " + encodeURIComponent(packagingNames[String(result.packaging)]) + "%0A" +
-    "*Détails :* " + encodeURIComponent(extras) + "%0A" +
-    "*Prix estimé :* " + result.total + " DH%0A%0A" +
-    "Merci de confirmer la disponibilité et les frais de livraison.";
+  const url = "https://wa.me/" + whatsappNumber +
+    "?text=" + encodeURIComponent(message);
 
-  const url = "https://wa.me/" + whatsappNumber + "?text=" + message;
   window.open(url, "_blank");
 });
 
