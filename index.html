@@ -232,25 +232,12 @@ input:focus,select:focus,textarea:focus {
   color:var(--rose);
 }
 .notice {font-size:12px;color:#806b73;margin:12px 0}
-.reviews {
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:15px;
-}
-.review {
-  background:white;
-  padding:18px;
-  border:1px solid #f1e2e7;
-  border-radius:13px;
-}
-.stars {color:#d3a23e}
 footer {
   background:#442e38;
   color:#fff3f7;
   padding:30px 6%;
   text-align:center;
 }
-footer a {color:#fff3f7;margin:5px;text-decoration:none}
 @media(max-width:700px) {
   header {justify-content:center}
   nav {justify-content:center}
@@ -260,7 +247,6 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
   .product img {height:180px}
   .colors {grid-template-columns:repeat(2,minmax(0,1fr))}
   .packages {grid-template-columns:1fr}
-  .reviews {grid-template-columns:1fr}
   .builder {padding:16px}
   .quantity-row {grid-template-columns:1fr;gap:0}
 }
@@ -279,7 +265,6 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
     <a href="#home">الرئيسية</a>
     <a href="#bouquets">باقاتنا</a>
     <a href="#customize">صممي باقتك</a>
-    <a href="#reviews">آراء الزبونات</a>
     <a href="#order">الطلب</a>
   </nav>
 </header>
@@ -308,6 +293,7 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
     <h2>باقاتنا المميزة</h2>
     <p>كل باقة مصنوعة يدوياً بكل حب.</p>
   </div>
+
   <div class="gallery">
     <article class="product">
       <img src="WA_1793214452479.jpeg" alt="باقة ورد أولى" loading="lazy">
@@ -317,6 +303,7 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
         <p class="price">ابتداءً من 10 دراهم للوردة</p>
       </div>
     </article>
+
     <article class="product">
       <img src="WA_1793214494011.jpeg" alt="باقة ورد ثانية" loading="lazy">
       <div class="product-info">
@@ -325,6 +312,7 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
         <p class="price">ابتداءً من 10 دراهم للوردة</p>
       </div>
     </article>
+
     <article class="product">
       <img src="WA_1793214518687.jpeg" alt="باقة ورد ثالثة" loading="lazy">
       <div class="product-info">
@@ -333,6 +321,7 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
         <p class="price">ابتداءً من 10 دراهم للوردة</p>
       </div>
     </article>
+
     <article class="product">
       <img src="WA_1793214532636.jpeg" alt="باقة ورد رابعة" loading="lazy">
       <div class="product-info">
@@ -341,6 +330,7 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
         <p class="price">ابتداءً من 10 دراهم للوردة</p>
       </div>
     </article>
+
     <article class="product">
       <img src="WA_1793214564371.jpeg" alt="باقة ورد خامسة" loading="lazy">
       <div class="product-info">
@@ -349,6 +339,7 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
         <p class="price">ابتداءً من 10 دراهم للوردة</p>
       </div>
     </article>
+
     <article class="product">
       <img src="WA_1793214594802.jpeg" alt="باقة ورد سادسة" loading="lazy">
       <div class="product-info">
@@ -367,6 +358,7 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
   </div>
 
   <div class="builder">
+
     <div class="field">
       <fieldset style="border:0">
         <legend>1. اختاري لوناً أو أكثر</legend>
@@ -403,8 +395,9 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
     <div class="quantity-row">
       <div class="field">
         <label for="quantity">2. عدد الورود</label>
-        <input id="quantity" type="number" min="1" max="100" value="10">
+        <input id="quantity" type="number" min="0" max="100" value="0" placeholder="اختاري عدد الورود">
       </div>
+
       <div class="field">
         <label for="size">3. حجم الباقة</label>
         <select id="size">
@@ -423,6 +416,7 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
           <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=200" alt="ورق كرافت">
           <span>🎀 تغليف ورق كرافت (+5 دراهم)</span>
         </label>
+
         <label class="package">
           <input type="radio" name="packaging" value="تغليف كريستال" data-price="10">
           <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=200" alt="تغليف كريستال">
@@ -457,37 +451,11 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
 
     <div class="total">
       <p>الثمن التقديري</p>
-      <strong id="total">105 دراهم</strong>
+      <strong id="total">0 درهم</strong>
       <p class="notice">10 دراهم للوردة + ثمن التغليف. التوصيل يُحدد بعد التأكيد.</p>
     </div>
-  </div>
-</section>
 
-<section id="reviews">
-  <div class="section-title">
-    <h2>آراء زبوناتنا 💗</h2>
-    <p>رضاكن هو أجمل هدية لنا.</p>
   </div>
-  <div class="reviews">
-    <article class="review">
-      <div class="stars">★★★★★</div>
-      <p>باقة جميلة ومصنوعة بعناية كبيرة.</p>
-      <small>مثال لتقييم زبونة</small>
-    </article>
-    <article class="review">
-      <div class="stars">★★★★★</div>
-      <p>الألوان رائعة والتغليف أنيق.</p>
-      <small>مثال لتقييم زبونة</small>
-    </article>
-    <article class="review">
-      <div class="stars">★★★★★</div>
-      <p>فكرة هدية مميزة، أعجبتني كثيراً.</p>
-      <small>مثال لتقييم زبونة</small>
-    </article>
-  </div>
-  <p class="notice" style="text-align:center">
-    هذه أمثلة فقط، يجب تعويضها بتقييمات حقيقية بموافقة أصحابها.
-  </p>
 </section>
 
 <section id="order">
@@ -501,26 +469,32 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
       <label for="customerName">الاسم الكامل *</label>
       <input id="customerName" type="text" required placeholder="اكتبي اسمك">
     </div>
+
     <div class="field">
       <label for="phone">رقم الهاتف *</label>
       <input id="phone" type="tel" required placeholder="رقم هاتفك">
     </div>
+
     <div class="field">
       <label for="city">المدينة *</label>
       <input id="city" type="text" required placeholder="مثلاً: أكادير">
     </div>
+
     <div class="field">
       <label for="address">عنوان التوصيل *</label>
       <textarea id="address" rows="2" required placeholder="الحي والشارع وتفاصيل العنوان"></textarea>
     </div>
+
     <div class="field">
       <label for="date">تاريخ التوصيل المطلوب</label>
       <input id="date" type="date">
     </div>
+
     <p class="notice">
       عند الضغط على الزر، ستفتح محادثة واتساب برسالة جاهزة.
       راجعي الرسالة واضغطي إرسال.
     </p>
+
     <button type="submit" class="btn">إرسال الطلب عبر واتساب</button>
   </form>
 </section>
@@ -533,10 +507,6 @@ footer a {color:#fff3f7;margin:5px;text-decoration:none}
   </div>
   <p>باقات ورد ساتان مصنوعة يدوياً بكل حب.</p>
   <p>شكراً لثقتكن بنا 💗</p>
-  <div style="margin-top:15px">
-    <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
-  </div>
   <p>© 2026 Roziera Flowers</p>
 </footer>
 
@@ -545,11 +515,7 @@ const quantityInput = document.getElementById("quantity");
 const totalDisplay = document.getElementById("total");
 
 function calculateTotal() {
-  let quantity = Number.parseInt(quantityInput.value, 10);
-
-  if (!Number.isFinite(quantity)) quantity = 1;
-  quantity = Math.max(1, Math.min(100, quantity));
-  quantityInput.value = quantity;
+  const rawValue = quantityInput.value.trim();
 
   const selected = document.querySelector(
     'input[name="packaging"]:checked'
@@ -559,14 +525,34 @@ function calculateTotal() {
     ? Number(selected.dataset.price)
     : 0;
 
-  const total = quantity * 10 + packagingPrice;
+  if (rawValue === "") {
+    totalDisplay.textContent = "0 درهم";
+    return {
+      quantity: 0,
+      packaging: selected ? selected.value : "غير محدد",
+      total: 0
+    };
+  }
+
+  const quantity = Number(rawValue);
+
+  if (!Number.isInteger(quantity) || quantity < 0 || quantity > 100) {
+    totalDisplay.textContent = "اختاري عدداً بين 0 و100";
+    return {
+      quantity: -1,
+      packaging: selected ? selected.value : "غير محدد",
+      total: 0
+    };
+  }
+
+  const total = quantity * 10 +
+    (quantity > 0 ? packagingPrice : 0);
 
   totalDisplay.textContent = total + " درهم";
 
   return {
     quantity: quantity,
     packaging: selected ? selected.value : "غير محدد",
-    packagingPrice: packagingPrice,
     total: total
   };
 }
@@ -579,6 +565,14 @@ document.querySelectorAll('input[name="packaging"]').forEach(function(input) {
 
 document.getElementById("orderForm").addEventListener("submit", function(event) {
   event.preventDefault();
+
+  const result = calculateTotal();
+
+  if (result.quantity < 1) {
+    alert("المرجو اختيار عدد الورود، من 1 حتى 100.");
+    quantityInput.focus();
+    return;
+  }
 
   const name = document.getElementById("customerName").value.trim();
   const phone = document.getElementById("phone").value.trim();
@@ -605,8 +599,6 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
   if (customColor) {
     colors += "، لون إضافي: " + customColor;
   }
-
-  const result = calculateTotal();
 
   const message = [
     "🌸 طلب جديد من موقع Roziera Flowers",
