@@ -4,8 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Roziera Flowers | باقات الورد</title>
-<meta name="description" content="باقات ورود ساتان مصنوعة يدوياً حسب اختيارك">
+<title>Roziera Flowers | باقات ورد الساتان في تارودانت</title>
+<meta name="description" content="Roziera Flowers: باقات ورود ساتان مصنوعة يدوياً. التوصيل متوفر في تارودانت وجميع النواحي التابعة لها. اختاري باقتك واطلبي عبر واتساب.">
+<meta name="keywords" content="Roziera Flowers, ورد الساتان, باقات ورد, هدايا, تارودانت, توصيل الورود تارودانت">
 
 <style>
 :root {
@@ -81,6 +82,15 @@ nav a:hover {color:var(--rose)}
 .eyebrow {
   color:var(--rose);
   font-size:13px;
+  font-weight:bold;
+}
+.delivery-banner {
+  background:#fff;
+  border:1px solid #edcfda;
+  border-radius:12px;
+  padding:13px 16px;
+  margin:18px 0;
+  color:var(--rose);
   font-weight:bold;
 }
 .btn {
@@ -290,6 +300,11 @@ footer {
       واختاري الألوان والتغليف والإضافات التي تعبر عن ذوقك.
       هديتك الخاصة تبدأ من هنا.
     </p>
+
+    <div class="delivery-banner">
+      🚚 التوصيل متوفر في تارودانت وجميع النواحي التابعة لها.
+    </div>
+
     <a href="#bouquets" class="btn">اكتشفي باقاتنا</a>
     <a href="#customize" class="btn btn-outline">صممي باقتك</a>
   </div>
@@ -406,16 +421,7 @@ footer {
     <div class="quantity-row">
       <div class="field">
         <label for="quantity">2. عدد الورود</label>
-        <input
-          id="quantity"
-          type="number"
-          min="0"
-          max="100"
-          step="1"
-          value=""
-          placeholder="اكتبي عدد الورود"
-          inputmode="numeric"
-        >
+        <input id="quantity" type="number" min="0" max="100" step="1" value="" placeholder="اكتبي عدد الورود" inputmode="numeric">
         <p class="notice">الثمن 10 دراهم لكل وردة.</p>
       </div>
 
@@ -450,27 +456,22 @@ footer {
     <div class="field">
       <label>5. اختاري الإضافات التي تريدينها</label>
       <div class="extras-grid">
-
         <label class="extra-option">
           <input type="checkbox" name="extra" value="دونتيل" data-price="10">
           دونتيل (+10 دراهم)
         </label>
-
         <label class="extra-option">
           <input type="checkbox" name="extra" value="فراشة" data-price="5">
           فراشة 🦋 (+5 دراهم)
         </label>
-
         <label class="extra-option">
           <input type="checkbox" name="extra" value="كتابة" data-price="15">
           كتابة اسم أو رسالة (+15 درهم)
         </label>
-
         <label class="extra-option">
           <input type="checkbox" name="extra" value="سلة" data-price="10">
           سلة (+10 دراهم)
         </label>
-
       </div>
     </div>
 
@@ -505,7 +506,7 @@ footer {
     <div class="total">
       <p>الثمن التقديري للباقة</p>
       <strong id="total">0 درهم</strong>
-      <p class="notice">التوصيل غير مشمول في الثمن، ويتم تحديده بعد التأكيد.</p>
+      <p class="notice">التوصيل متوفر في تارودانت وجميع النواحي التابعة لها. ثمن التوصيل غير مشمول، ويتم تحديده حسب المنطقة بعد التأكيد.</p>
     </div>
 
   </div>
@@ -514,7 +515,7 @@ footer {
 <section id="order">
   <div class="section-title">
     <h2>إتمام الطلب</h2>
-    <p>أدخلي معلوماتك لإرسال تفاصيل الباقة عبر واتساب.</p>
+    <p>التوصيل متوفر في تارودانت وجميع النواحي التابعة لها.</p>
   </div>
 
   <form class="builder" id="orderForm">
@@ -529,14 +530,18 @@ footer {
       <input id="phone" type="tel" required placeholder="رقم هاتفك">
     </div>
 
-    <div class="field">
-      <label for="city">المدينة *</label>
-      <input id="city" type="text" required placeholder="مثلاً: أكادير">
+    <div class="delivery-banner">
+      📍 نستقبل الطلبات من تارودانت وجميع النواحي التابعة لها.
     </div>
 
     <div class="field">
-      <label for="address">عنوان التوصيل *</label>
-      <textarea id="address" rows="2" required placeholder="الحي والشارع وتفاصيل العنوان"></textarea>
+      <label for="city">المدينة أو الدوار أو المنطقة *</label>
+      <input id="city" type="text" required placeholder="اكتبي اسم المدينة أو الدوار داخل تارودانت والنواحي">
+    </div>
+
+    <div class="field">
+      <label for="address">عنوان التوصيل بالتفصيل *</label>
+      <textarea id="address" rows="2" required placeholder="الحي، الشارع، الدوار أو أقرب نقطة معروفة"></textarea>
     </div>
 
     <div class="field">
@@ -545,8 +550,8 @@ footer {
     </div>
 
     <p class="notice">
-      عند الضغط على الزر، ستفتح محادثة واتساب برسالة جاهزة.
-      راجعي الرسالة واضغطي إرسال.
+      التوصيل متوفر في تارودانت وجميع النواحي التابعة لها.
+      ثمن التوصيل كيتحدد حسب المنطقة، وكنأكدو معاكم التفاصيل قبل تأكيد الطلب.
     </p>
 
     <button type="submit" class="btn">إرسال الطلب عبر واتساب</button>
@@ -560,6 +565,7 @@ footer {
     Roziera <span>Flowers</span> 🌸
   </div>
   <p>باقات ورد ساتان مصنوعة يدوياً بكل حب.</p>
+  <p>🚚 التوصيل في تارودانت وجميع النواحي التابعة لها.</p>
   <p>شكراً لثقتكن بنا 💗</p>
   <p>© 2026 Roziera Flowers</p>
 </footer>
@@ -593,6 +599,7 @@ function calculateTotal() {
       valid: false,
       quantity: 0,
       packaging: selectedPackaging ? selectedPackaging.value : "غير محدد",
+      packagingPrice: packagingPrice,
       extras: selectedExtras.map(item => item.value),
       extrasPrice: extrasPrice,
       total: 0
@@ -607,6 +614,7 @@ function calculateTotal() {
       valid: false,
       quantity: quantity,
       packaging: selectedPackaging ? selectedPackaging.value : "غير محدد",
+      packagingPrice: packagingPrice,
       extras: selectedExtras.map(item => item.value),
       extrasPrice: extrasPrice,
       total: 0
@@ -614,7 +622,6 @@ function calculateTotal() {
   }
 
   const total = quantity * 10 + packagingPrice + extrasPrice;
-
   totalDisplay.textContent = total + " درهم";
 
   return {
@@ -682,9 +689,10 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
   const message = [
     "🌸 طلب جديد من موقع Roziera Flowers",
     "",
+    "🚚 منطقة التوصيل: تارودانت وجميع النواحي التابعة لها",
     "👤 الاسم: " + name,
     "📞 الهاتف: " + phone,
-    "📍 المدينة: " + city,
+    "📍 المدينة أو الدوار: " + city,
     "🏠 العنوان: " + address,
     "📅 تاريخ التوصيل: " + date,
     "",
@@ -702,6 +710,7 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
     "💰 ثمن التغليف: " + result.packagingPrice + " درهم",
     "💰 ثمن الإضافات: " + result.extrasPrice + " درهم",
     "💰 المجموع التقديري: " + result.total + " درهم",
+    "🚚 ثمن التوصيل: يحدد حسب المنطقة",
     "",
     "المرجو تأكيد الطلب وثمن التوصيل. شكراً لكم."
   ].join("\n");
